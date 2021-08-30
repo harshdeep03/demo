@@ -1,0 +1,6 @@
+customhost = "demodb.ctr1nhto2rau.ap-south-1.rds.amazonaws.com"
+customuser = "admin"
+custompass = "12345678"
+customdb = "demodb"
+custombucket = "demo2021bucket"
+customregion = "ap-south-1"
