@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from flask import Response,send_file
 from pymysql import connections
 import os
 import boto3
@@ -6,17 +7,11 @@ from config import *
 
 app = Flask(__name__)
 
-bucket = custombucket
-region = customregion
+import config as con 
 
-db_conn = connections.Connection(
-    host=customhost,
-    port=3306,
-    user=customuser,
-    password=custompass,
-    db=customdb
+bucket = demo2021bucket
+region = ap-south-1
 
-)
 output = {}
 table = 'employee'
 
