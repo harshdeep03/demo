@@ -1,6 +1,10 @@
-customhost = "demodb.ctr1nhto2rau.ap-south-1.rds.amazonaws.com"
-customuser = "admin"
-custompass = "12345678"
-customdb = "demodb"
-custombucket = "demo2021bucket"
-customregion = "ap-south-1"
+import pymysql
+import aws_credentials as rds
+conn = pymysql.connect(
+        host= demodb.ctr1nhto2rau.ap-south-1.rds.amazonaws.com, #endpoint link
+        port = 3306, # 3306
+        user = admin, # admin
+        password = 12345678, #adminadmin
+        db = demodb, #test
+        
+        )
